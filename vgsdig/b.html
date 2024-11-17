@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipping Grid</title>
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <style>
+        body {
+            
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(../alpha.png);
+            background-size: 100vw 100vh;
+        }
+        .Container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px; 
+            width: 1100px;
+            margin: 0 auto;
+        }
+        .card {
+            position: relative;
+            width: 300px; 
+            height: 200px; 
+            perspective: 1000px; 
+        }
+        .flipper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d; 
+        }
+        .card:hover .flipper {
+            transform: rotateY(180deg); 
+        }
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; 
+            border: 2px solid black;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            font-family: 'Bubblegum Sans';
+            font-style: oblique;
+            backdrop-filter: blur(10px);
+            background-image: linear-gradient(to right, rgb(198, 206, 213), rgb(89, 152, 177));
+        }
+        .back {
+            transform: rotateY(180deg); 
+            background-color: rgb(253, 254, 254);
+            color: darkslategrey;
+        }
+        img{
+            border-radius: 25px; width: 300px; height: 200px;
+            
+        }
+        .next:hover,.box:hover,.previous:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .next{
+            transition: .2s;
+            position: relative;
+            float: right;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            text-align: left;
+            margin-right: 20px;
+        }
+        .next,.previous{
+            top: 50px;
+           
+        }
+            .previous{
+            transition: .2s;
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            text-align: right;
+            margin-left: 20px;
+            
+        }
+        .front{
+            background-image: url(../card.png);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="Container">
+        
+    <div class="card">
+        <div class="flipper">
+            <div class="front">
+                <div>G</div>
+            </div>
+            <div class="back">
+                <img src="../imgs/G.jpg" alt="" style="border-radius: 25px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="flipper">
+            <div class="front">
+                <div>H</div>
+            </div>
+            <div class="back">
+                <img src="../imgs/H.jpg" alt="" style="border-radius: 25px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="flipper">
+            <div class="front">
+                <div>I</div>
+            </div>
+            <div class="back">
+                <img src="../imgs/I.jpg" alt="" style="border-radius: 25px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="flipper">
+            <div class="front">
+                <div>J</div>
+            </div>
+            <div class="back">
+                <img src="../imgs/J.jpg" alt="" style="border-radius: 25px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="flipper">
+            <div class="front">
+                <div>K</div>
+            </div>
+            <div class="back">
+                <img src="../imgs/K.jpg" alt="" style="border-radius: 25px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="flipper">
+            <div class="front">
+                <div>L</div>
+            </div>
+            <div class="back">
+                <img src="../imgs/L.jpg" alt="" style="border-radius: 25px;">
+            </div>
+        </div>
+    </div>
+</center>
+    
+    <button class="previous" onclick="location.href='a.html'">Previous</button>
+    <button class="next" onclick="location.href='c.html'">Next</button>
+</body>
+</html>
