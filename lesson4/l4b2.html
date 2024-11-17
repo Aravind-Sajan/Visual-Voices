@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Divs Example</title>
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <style>
+        button{
+            background-color: white;
+        }
+        body {
+            align-items: center;
+            font-family: 'Bubblegum Sans';
+            font-family:"Bubblegum Sans";
+            line-height: 1.6;
+            color: #333;
+            background-image: url(../WhatsApp\ Image\ 2024-10-27\ at\ 06.16.09_afeb09d1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-size: 30px;
+        }
+        .container {
+            display: flex;
+            align-items: center;    
+        }
+        .box {
+            position: relative;
+            width: 1000px;
+            height: 400px;
+            border: solid black 3px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: .2s;
+        }
+        .next:hover,.box:hover,.previous:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .next{
+            transition: .2s;
+            position: relative;
+            float: right;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            text-align: left;
+        }
+        .box,.next,.previous{
+            top: 50px;
+        }
+        .dis{
+            position: relative;
+            font-family: 'Bubblegum Sans';
+        }
+        .previous{
+            transition: .2s;
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="box" >
+            <div class="dis"><img src="../quizes/rice.png">
+                <h2>Rice</h2>
+                <p>To sign rice, form your dominant hand into the ASL letter R sign. Then we create a bowl with our non-dominant hand, while making a spoon with the 'R' formed.</p>
+            </div>
+        </button>
+        <button class="box" >
+            <div class="dis"><img src="../quizes/water.png">
+                <h2>Water</h2>
+                <p>By extending your three middle fingers so they're pointing up, with your thumb and pinkie tucked down, and then tapping your index finger to your chin.</p>
+            </div>
+        </button>
+        <button class="box" >
+            <div class="dis"><img src="../quizes/milk.jpeg">
+                <h2>Milk</h2>
+                <p>Make a fist and move it up and down as if holding a milk carton.</p>
+            </div>
+        </button>
+
+    </div>
+    <button class="next" onclick="location.href='../l4quiz/quizo4(1).html'">Quiz</button>
+    <button class="previous" onclick="location.href='l4b1.html'">Previous</button>
+</body>
+</html>

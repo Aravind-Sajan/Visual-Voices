@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Divs Example</title>
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <style>
+        button{
+            background-color: white;
+        }
+        body {
+            align-items: center;
+            font-family: 'Bubblegum Sans';
+            font-family:"Bubblegum Sans";
+            line-height: 1.6;
+            color: #333;
+            background-image: url(../WhatsApp\ Image\ 2024-10-27\ at\ 06.16.09_afeb09d1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-size: 30px;
+        }
+        .container {
+            display: flex;
+            align-items: center;    
+        }
+        .box {
+            position: relative;
+            width: 1000px;
+            height: 400px;
+            border: solid black 3px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: .2s;
+        }
+        .quiz:hover,.box:hover,.previous:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .quiz{
+            transition: .2s;
+            position: relative;
+            float: right;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            text-align: left;
+        }
+        .box,.quiz,.previous{
+            top: 50px;
+        }
+        .dis{
+            position: relative;
+            font-family: 'Bubblegum Sans';
+        }
+        .previous{
+            transition: .2s;
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="box">
+            <div class="dis"><img src="../quizes/grandma.png">
+                <h2>Grandmother</h2>
+                <p>Spread out your fingers on one hand. Touch your thumb to the side of your chin. Make two sweeping arcs in front of you with that hand.</p>
+            </div>
+        </button>
+        <button class="box" >
+            <div class="dis"><img src="../quizes/grandpa.png" >
+                <h2>Grandfather</h2>
+                <p>Start with your hand outstretched and your fingers spread .Place your thumb on your forehead .Move your hand forward in two small arches.</p>
+            </div>
+        </button>
+        <button class="box">
+            <div class="dis"><img src="../quizes/aunt.jpeg">
+                <h2>Aunt</h2>
+                <p>To do aunt, make a fist with your thumb sticking out near your face, at top of the fist. Leading with the thumb, move your hand in a small circle near your cheek.</p>
+            </div>
+        </button>
+        <button class="box" >
+            <div class="dis"><img src="../quizes/uncle.png">
+                <h2>Uncle</h2>
+                <p>To sign uncle, extend your index finger and middle finger to make the ASL sign for 'U'. Take the hand and move it in small circles to the side of your body at the level of your forehead.</p>
+            </div>
+        </button>
+    
+
+
+    </div>
+    <button class="quiz" onclick="location.href='../l3quiz/quizo4 copy(1).html'">Quiz</button>
+    <button class="previous" onclick="location.href='l3b1.html'">Previous</button>
+</body>
+</html>

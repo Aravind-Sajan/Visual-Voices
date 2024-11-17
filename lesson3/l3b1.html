@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Divs Example</title>
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <style>
+        button{
+            background-color: white;
+        }
+        body {
+            align-items: center;
+            font-family: 'Bubblegum Sans';
+            font-family:"Bubblegum Sans";
+            line-height: 1.6;
+            color: #333;
+            background-image: url(../WhatsApp\ Image\ 2024-10-27\ at\ 06.16.09_afeb09d1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-size: 30px;
+        }
+        .container {
+            display: flex;
+            align-items: center;    
+        }
+        .box {
+            position: relative;
+            width: 1000px;
+            height: 400px;
+            border: solid black 3px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: .2s;
+        }
+        .next:hover,.box:hover,.previous:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .next{
+            transition: .2s;
+            position: relative;
+            float: right;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            text-align: left;
+        }
+        .box,.next{
+            top: 50px;
+        }
+        .dis{
+            position: relative;
+            font-family: 'Bubblegum Sans';
+        }
+        .previous{
+            transition: .2s;
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            text-align: left;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="box">
+        <div class="dis"><img src="../quizes/mom.png">
+        <h2>Mother</h2>
+        <p>Place your thumb on your chin with fingers extended.</p>
+            </div>
+        </button>
+        <button class="box">
+            <div class="dis"><img src="../quizes/dad.png">
+                <h2>Father</h2>
+                <p>Place your thumb on your forehead with fingers extended.</p>
+            </div>
+        </button>
+        <button class="box" >
+            <div class="dis"><img src="../quizes/sis.png">
+                <h2>Sister</h2>
+                <p>Extend your thumb and index fingers on both hands to form horizontal "L" shapes</p>
+            </div>
+        </button>
+        <button class="box" >
+            <div class="dis"><img src="../quizes/bro.png" width="250px">
+                <h2>Brother</h2>
+                <p>Make both hands into an "L" shape with your thumbs and index fingers extended</p>
+            </div>
+        </button>
+    </div>
+    <button class="next" onclick="location.href='l3b3.html'">Next</button>
+    <button class="previous" onclick="location.href='../aravind.html'">Previous</button>
+</body>
+</html>
